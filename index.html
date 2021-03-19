@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="viewport" content="width-device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="src/styles.css">
-  <script src="src./index.js"></script>
+  <script src="/src/index.js" type = "module"></script>
   <title>PupGram</title>
   <meta charset="UTF-8" />
   <link rel="stylesheet" type="text/css" href="src/styles.css" />
@@ -20,13 +20,21 @@
 
 <div class="card">
 
-<form>
+<form action="/add-pup-form-page" method="post">>
+  <ul>
+    <li>
       <label for="pupname">Puppy Name:</label><input id="pupname"<br>
       <input type="text" id="pupname" name="pupname"><br>
+      </li>
+  <li>
       <label for="infoURL">URL to Photo:</label><input id="infoURL"<br>
       <input type="text" id="infoURL" name="infoURL"><br>
+       </li>
+  <li>
       <label for="pugIG">URL to Puppy IG:</label><input id="pugIG"<br>
       <input type="text" id="pugIG" name="pugIG"><br>
+       </li>
+  <li>
       <label for="diff">What Breed Is Your Pup?</label>
       <select id="diff">
         <option value="pug">PUG</option>
@@ -35,7 +43,11 @@
         <option value="pitbull">PITBULL</option>
         <option value="frenchbulldog">FRENCH BULLDOG</option>
       </select>
+       </li>
+  <li>
       <input type="submit" value="Submit">
+       </li>
+  <li>
     </form>
 
     <!--
